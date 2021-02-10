@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	
+	int num=0;
+	char opc='n';
+	
+	inicio:
+	system ("cls");
+	
+	cout<<"tente adivinhar que numero de 1 a 10 estou pensando: ";
+	cin>>num;
+	
+	
+	if(num<4 && num>2){
+		cout<<"\n\nACERTOU!!!\n\n";
+		
+		system("pause");
+	}else{
+		cout<<"\n\nERROU!!!\n\n";
+		cout<<"\nDeseja tentar novamente?[s/n]:";
+		cin>>opc;
+		if(opc=='s' || opc=='S'){
+			goto inicio;
+		}
+	
+	}
+	
+	
+	
+	
+	return 0;
+}
